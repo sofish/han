@@ -1,7 +1,7 @@
 {
   "name": "han",
   "description": "a module for tanslating Chinese(汉字) to pinyin",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": {
     "name": "Sofish Lin",
     "email": "sofish@me.com"

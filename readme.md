@@ -1,5 +1,7 @@
 # Han(汉)
 
+[![Build Status](https://travis-ci.org/sofish/han.png)](https://travis-ci.org/sofish/han)
+
 a module for tanslating Chinese(汉字) to pinyin.
 
 ### Installation
