@@ -1,0 +1,22 @@
+{
+  "name": "han",
+  "description": "a module for tanslate Chinese(汉字) to pinyin",
+  "version": "0.0.1",
+  "author": {
+    "name": "Sofish Lin",
+    "email": "sofish@me.com"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "keywords": ["han", "pinyin", "url"],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sofish/han.git"
+  },
+  "main": "han",
+  "bin": {},
+  "scripts": {},
+  "engines": {
+    "node": "*"
+  }
+}
