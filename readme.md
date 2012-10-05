@@ -40,8 +40,8 @@ The `letter` method has 3 params by default, the can all be _**optional**_, it d
 ```js
 var han = require('han');
 
-console.log('原文：中文\n' + han.letter('中文'), '\n')
-console.log('原文：要实现 Speaker Deck 那种中文转拼音的\n' + han.letter('要实现 Speaker Deck 那种中文转拼音的', '-'), '\n')
+console.log('原文：要实现 Speaker Deck 那种中文转拼音的')
+console.log(han.letter('要实现 Speaker Deck 那种中文转拼音的', '-'), '\n')
 
 han.letter('中aaaaa中¢∞§¶•誩aa文喳aa', function(err, result){
 	if(err) throw err;
@@ -56,10 +56,7 @@ han.letter('中EnglishWords¢∞§¶•ªº文', '-', function(err, result){
 ```
 
 #### output:
-```js
-原文：中文
-zhong wen
-
+```
 原文：要实现 Speaker Deck 那种中文转拼音的
 yao-shi-xian-speaker-deck-na-zhong-zhong-wen-zhuan-pin-yin-de
 
