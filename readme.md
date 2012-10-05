@@ -34,39 +34,42 @@ The `letter` method has 3 params by default, the can all be _**optional**_, it d
  */
 ```
 
-### Translating Messy Code
+## Testcase
 
-#### sample code, orginal file is here [testcase.js](https://github.com/sofish/han/blob/master/testcase.js):
+```sh
+$ npm install han
+# or git clone git://github.com/sofish/han.git
+
+$ cd node_modules/han && node testcase.js
+```
+
+## Translating Messy Code
+
+Messy code? orginal file is here [testcase.js](https://github.com/sofish/han/blob/master/testcase.js):
 ```js
 var han = require('han');
 
 console.log('原文：要实现 Speaker Deck 那种中文转拼音的')
 console.log(han.letter('要实现 Speaker Deck 那种中文转拼音的', '-'), '\n')
+// 原文：要实现 Speaker Deck 那种中文转拼音的
+// yao-shi-xian-speaker-deck-na-zhong-zhong-wen-zhuan-pin-yin-de
+
 
 han.letter('中aaaaa中¢∞§¶•誩aa文喳aa', function(err, result){
 	if(err) throw err;
 	console.log('原文：中aaaaa中¢∞§¶•誩aa文喳aa')
 	console.log('异步结果：' + result, '\n')
+	// 原文：中aaaaa中¢∞§¶•誩aa文喳aa
+  // 异步结果：zhong aaaaa 4e2da2 221ea7b6 2022 jing aa wen zha aa
 });
 
 han.letter('中EnglishWords¢∞§¶•ªº文', '-', function(err, result){
 	console.log('原文：中EnglishWords¢∞§¶•ªº文')
 	console.log('异步结果：' + result)
+	// 原文：中EnglishWords¢∞§¶•ªº文
+  // 异步结果：zhong-englishwords-221ea7b6-2022aaba-wen
 });
 ```
-
-#### output:
-```
-原文：要实现 Speaker Deck 那种中文转拼音的
-yao-shi-xian-speaker-deck-na-zhong-zhong-wen-zhuan-pin-yin-de
-
-原文：中aaaaa中¢∞§¶•誩aa文喳aa
-异步结果：zhong aaaaa 4e2da2 221ea7b6 2022 jing aa wen zha aa
-
-原文：中EnglishWords¢∞§¶•ªº文
-异步结果：zhong-englishwords-221ea7b6-2022aaba-wen
-```
-
 
 ### License
 
