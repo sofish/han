@@ -16,3 +16,6 @@ Desktop.ini
 .settings
 .buildpath
 .project
+
+# VIM
+*.swp
