@@ -4,13 +4,13 @@
 
 a module for tanslating Chinese(汉字) to pinyin.
 
-### Installation
+## Installation
 
 ```bash
 $ npm install han
 ```
 
-### Usage
+## Usage
 
 Use the `letter` method to translate Chinese in to english letter:
 
@@ -54,29 +54,28 @@ console.log(han.letter('要实现 Speaker Deck 那种中文转拼音的', '-'), 
 // 原文：要实现 Speaker Deck 那种中文转拼音的
 // yao-shi-xian-speaker-deck-na-zhong-zhong-wen-zhuan-pin-yin-de
 
-
 han.letter('中aaaaa中¢∞§¶•誩aa文喳aa', function(err, result){
-	if(err) throw err;
-	console.log('原文：中aaaaa中¢∞§¶•誩aa文喳aa')
-	console.log('异步结果：' + result, '\n')
-	// 原文：中aaaaa中¢∞§¶•誩aa文喳aa
+  if(err) throw err;
+  console.log('原文：中aaaaa中¢∞§¶•誩aa文喳aa')
+  console.log('异步结果：' + result, '\n')
+  // 原文：中aaaaa中¢∞§¶•誩aa文喳aa
   // 异步结果：zhong aaaaa 4e2da2 221ea7b6 2022 jing aa wen zha aa
 });
 
 han.letter('中EnglishWords¢∞§¶•ªº文', '-', function(err, result){
-	console.log('原文：中EnglishWords¢∞§¶•ªº文')
-	console.log('异步结果：' + result)
-	// 原文：中EnglishWords¢∞§¶•ªº文
+  console.log('原文：中EnglishWords¢∞§¶•ªº文')
+  console.log('异步结果：' + result)
+  // 原文：中EnglishWords¢∞§¶•ªº文
   // 异步结果：zhong-englishwords-221ea7b6-2022aaba-wen
 });
 ```
 
-### License
+## License
 
 Licensed under [MIT](https://github.com/sofish/han/blob/master/LICENSE).
 
 
-### Contributers:
+## Contributers:
 
 Specail thank to [fayland](https://github.com/fayland/perl-lingua-han/tree/master/Lingua-Han-PinYin/lib/Lingua/Han/PinYin) for providing the unicode table of Chinese.
 
