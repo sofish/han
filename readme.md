@@ -99,9 +99,9 @@ console.log(han.pinyin('My Chinese name is 小鱼(sofish)'))
 console.log('original: #$%^&*中23¢∞§¶•ª52849文@#$%^&*(意思，还有英文：english')
 console.log(han.pinyin('#$%^&*中23¢∞§¶•ª52849文@#$%^&*(意思，还有英文：english'))
 // original: #$%^&*中23¢∞§¶•ª52849文@#$%^&*(意思，还有英文：english
-[ '#$%^&*', [ 'zhōng', 'zhòng' ], '23¢∞§¶•ª52849', [ 'wén', 'wèn' ],
-  '@#$%^&*(', [ 'yì' ], [ 'sī', 'sì', 'sāi' ], '，', [ 'húan', 'hái', 'xúan' ],
-  [ 'yǒu', 'yòu' ], [ 'yīng', 'yāng' ], [ 'wén', 'wèn' ], '：english' ]
+// [ '#$%^&*', [ 'zhōng', 'zhòng' ], '23¢∞§¶•ª52849', [ 'wén', 'wèn' ],
+//  '@#$%^&*(', [ 'yì' ], [ 'sī', 'sì', 'sāi' ], '，', [ 'húan', 'hái', 'xúan' ],
+//  [ 'yǒu', 'yòu' ], [ 'yīng', 'yāng' ], [ 'wén', 'wèn' ], '：english' ]
 ```
 
 ## License
