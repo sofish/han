@@ -20,3 +20,8 @@ console.log('');
 
 console.log('original: #$%^&*中23¢∞§¶•ª52849文@#$%^&*(意思，还有英文：english')
 console.log(han.pinyin('#$%^&*中23¢∞§¶•ª52849文@#$%^&*(意思，还有英文：english'))
+
+console.log('');
+console.log('what about empty string? ' + Object.prototype.toString.call(han.pinyin('')));
+console.log(han.pinyin('words like 1234567890 only'))
+console.log(han.pinyin('English words and ∞§¶•ª will always return itself'))
