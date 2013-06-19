@@ -29,7 +29,7 @@ han.letter('中文', function(err, result){
 })
 ```
 
-The `letter` method has 3 params by default, the can all be _**optional**_, it depends on you(^^). follow the message below, you can also find it at [lib/translate.js](https://github.com/sofish/han/blob/master/lib/translate.js):
+The `letter` method has 3 params by default, they can all be _**optional**_, it depends on you(^^). follow the message below, you can also find it at [lib/translate.js](https://github.com/sofish/han/blob/master/lib/translate.js):
 
 ```js
 /* @param `chinese` {String} Chinese word
