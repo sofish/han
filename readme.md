@@ -22,10 +22,10 @@ Use the `letter` method to translate Chinese in to english letter:
 ```js
 var han = require('han');
 
-han.letter('中文') // zhong wen
+han.letter('中文') // zhongwen
 han.letter('中文', '-') // zhong-wen
 han.letter('中文', function(err, result){
-  console.log(result) // zhong wen
+  console.log(result) // zhongwen
 })
 ```
 
