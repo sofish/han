@@ -2,21 +2,46 @@
   "name": "han",
   "description": "a module for tanslating Chinese(汉字) into pinyin",
   "version": "0.0.7",
-  "author": {
-    "name": "Sofish Lin",
-    "email": "sofish@me.com"
-  },
+  "author": "Sofish Lin <sofish@me.com>",
   "dependencies": {},
-  "devDependencies": {},
-  "keywords": ["han", "pinyin", "url"],
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*",
+    "blanket": "*",
+    "travis-cov": "*",
+    "mocha-lcov-reporter": "*",
+    "coveralls": "*"
+  },
+  "keywords": [
+    "han",
+    "pinyin",
+    "url"
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/sofish/han.git"
   },
+  "config": {
+    "blanket": {
+      "pattern": "han/lib",
+      "data-cover-flags": {
+        "debug": false
+      }
+    },
+    "travis-cov": {
+      "threshold": 98
+    }
+  },
   "main": "han",
-  "bin": {},
-  "scripts": {},
+  "scripts": {
+    "test": "make test"
+  },
   "engines": {
     "node": "*"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/sofish/han/issues"
+  },
+  "homepage": "https://github.com/sofish/han",
+  "license": "MIT"
 }
