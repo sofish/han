@@ -1,6 +1,7 @@
 # Han(汉)
 
 [![Build Status](https://travis-ci.org/sofish/han.png)](https://travis-ci.org/sofish/han)
+[![Coverage Status](https://coveralls.io/repos/sofish/han/badge.png)](https://coveralls.io/r/sofish/han)
 
 a module for tanslating Chinese(汉字) into pinyin.
 
@@ -63,7 +64,7 @@ Beause that a Chinese word always having more than one pronunciation. You may wa
 $ npm install han
 # or git clone git://github.com/sofish/han.git
 
-$ cd node_modules/han && node testcase.js
+$ cd node_modules/han && make test
 ```
 
 ## Translating Messy Code
