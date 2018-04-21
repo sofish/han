@@ -8,7 +8,7 @@ describe('han', function () {
     han.letter('要实现 Speaker Deck 那种中文转拼音的', '-').should.be.equal(expect);
   });
 
-  it('letter with 特殊符号', function () {
+  it('letter with input mixed with special characters', function () {
     han.letter('中aaaaa中¢∞§¶•誩aa文喳aa').should.be.equal('zhongaaaaa4e2da2221ea7b62022jingaawenzhaaa');
     han.letter('中EnglishWords¢∞§¶•ªº文', '-').should.be.equal('zhong-englishwords-221ea7b6-2022aaba-wen');
   });

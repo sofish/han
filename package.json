@@ -1,6 +1,6 @@
 {
   "name": "han",
-  "description": "a module for tanslating Chinese(汉字) into pinyin",
+  "description": "Generate romanized Chinese strings",
   "version": "0.0.7",
   "author": "Sofish Lin <sofish@me.com>",
   "dependencies": {},
